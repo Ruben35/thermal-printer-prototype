@@ -31,7 +31,12 @@ function connectAndPrint() {
   console.log("Connecting to the printer...");
 
   //Printer IP address
-  var printerIp = "192.168.0.51"; //Replace with your printer IP address
+  var printerIp = prompt("Enter the printer IP Address (xxx.xxx.xxx.xxx):");
+
+  if (!isValidIPAddress(printerIp)) {
+    alert("Invalid IP Address");
+    return;
+  }
 
   // Printer connection
   ePosDev.connect(printerIp, 8043, function (resultConnect) {
@@ -95,4 +100,10 @@ function connectAndPrint() {
       alert("Connection error: " + resultConnect);
     }
   });
+}
+
+function isValidIPAddress(ip) {
+  const ipRegex =
+    /^(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])$/;
+  return ipRegex.test(ip);
 }
