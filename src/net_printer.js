@@ -1,8 +1,14 @@
+import imageToCanvas from "/images/bat.png";
+
 // * Image Loading for Ticket future use
 var img = new Image();
-img.src = "/images/bat.png";
+img.src = imageToCanvas;
+
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
+canvas.width = img.width;
+canvas.height = img.height;
+ctx.drawImage(img, 0, 0);
 
 img.onload = function () {
   //Create canvas and draw image

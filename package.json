@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/Ruben35/thermal-printer-prototype/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --emptyOutDir",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build --emptyOutDir --base=/thermal-printer-prototype/ && gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite": "^5.3.1"
   },
   "dependencies": {
