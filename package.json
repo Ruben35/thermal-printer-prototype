@@ -1,0 +1,16 @@
+{
+  "name": "test-web-printer",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "thermal-printer-encoder": "^2.0.1"
+  }
+}
