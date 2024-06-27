@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="/lib/epos-2.27.0.js"></script>
+    <title>Thermal Printer</title>
+    <script type="module" crossorigin src="/assets/index-BZ0n3XxE.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BfibREyH.css">
+  </head>
+  <body>
+    <main
+      id="main"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+      "
+    >
+      <h1 style="text-align: center">Thermal Printer Prototype</h1>
+      <article style="display: flex; flex-direction: column">
+        <h2 style="display: block; text-align: center">Printer with USB</h2>
+        <div style="display: flex; gap: 30px">
+          <button id="connect">Connect USB Printer</button>
+          <button id="print">Print</button>
+        </div>
+      </article>
+      <article style="display: flex; flex-direction: column">
+        <h2 style="display: block; text-align: center">Printer with Network</h2>
+        <button id="print-net">Print with net</button>
+      </article>
+    </main>
+  </body>
+</html>
