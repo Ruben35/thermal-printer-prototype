@@ -1,6 +1,6 @@
 // * Image Loading for Ticket future use
 var img = new Image();
-img.src = "./images/bat.png";
+img.src = "/images/bat.png";
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
 
